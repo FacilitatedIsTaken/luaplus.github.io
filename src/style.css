@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* CSS for the navbar */
+.TopNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 4rem;
+}
+
+.TopNavBar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.TopNavBar ul li {
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.TopNavBar ul li a:active {
+    outline: none;
+}
+
+.NavbarButtons li a {
+    font-size: 1rem;
+    background-size: 2.5rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    opacity: 0.5;
+    font-family: 'Poppins';
+    transition: opacity 0.5s;
+}
+
+.NavbarButtons li a:hover {
+    opacity: 1;
+    outline: 1px solid rgb(65, 113, 196);
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    .TopNavBar ul {
+        flex-direction: column;
+    }
+}
+
+.HeaderPage {
+    position: absolute;
+    background-color: #071031;
+    width: 100%;
+    height: 50rem;
+}
+
+.Circle {
+    background-color: #05316d;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100px;
+    opacity: 1;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 0 1rem #05316d,
+    0 0 2rem 1rem #05316d,
+    0 0 4rem 1rem #05316d,
+    0 0 8rem 1rem #05316d,
+    0 0 16rem 2rem #05316d;
+    }
