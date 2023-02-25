@@ -25,6 +25,7 @@ p {
     z-index: 1;
     padding: 0 2%;
     max-width: 100%;
+    z-index: 5;
 }
 
 .NavbarIcon {
@@ -77,21 +78,33 @@ p {
     background-color: #090f31;
 }
 
-.HeaderPageCenterImage {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.About {
+    text-align: center;
+    font-family: 'Poppins';
+    width: 100%;
+    min-height: 65vh;
 }
 
-.ImageGlowBackground {
+.Title {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.Description {
+    opacity: 0.5;
+    transform: translate(0%, 20%);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.TitleGlow {
     background-color: #ffae00;
     position: absolute;
-    top: 28%;
-    left: 36%;
-    width: 25%;
-    height: 50%;
-    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 43%;
+    width: 15%;
+    height: 20%;
+    transform: translate(50%, 50%);
     opacity: 30%;
     border-radius: 50rem;
     backface-visibility: visible;
@@ -103,6 +116,7 @@ p {
     animation-name: colorChange;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    z-index: 1;
 }
 
 @keyframes colorChange {
@@ -115,29 +129,4 @@ p {
     100% {
         background-color: #00bbff;
     }
-}
-
-.LibraryDescription {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
-    max-width: 100%;
-    text-align: center;
-    font-weight: 900;
-}
-
-.LibraryDescriptionBottom {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    max-width: 100%;
-    text-align: center;
-    opacity: 0.2;
-    font-weight:800;
 }
